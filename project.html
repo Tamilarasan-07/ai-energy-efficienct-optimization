@@ -1,0 +1,85 @@
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI Energy Efficiency Dashboard</title>
+  <link:java></link:java>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f6f8;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #2c3e50;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    .dashboard {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+    .card {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      padding: 20px;
+      text-align: center;
+    }
+    .card h2 {
+      margin: 0 0 10px;
+      color: #333;
+    }
+    .status-ok {
+      color: green;
+      font-weight: bold;
+    }
+    .status-alert {
+      color: red;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>AI Energy Efficiency Optimization Dashboard</h1>
+    <p>Monitoring and optimizing energy in real time</p>
+  </header>
+
+  <section class="dashboard">
+    <div class="card">
+      <h2>Current Energy Usage</h2>
+      <p><strong>320 kWh</strong></p>
+    </div>
+    <div class="card">
+      <h2>Predicted Usage (Next Hour)</h2>
+      <p><strong>305 kWh</strong></p>
+    </div>
+    <div class="card">
+      <h2>System Status</h2>
+      <p class="status-ok">Optimal</p>
+    </div>
+    <div class="card">
+      <h2>HVAC Control</h2>
+      <p>Set Temp: <strong>22°C</strong></p>
+    </div>
+    <div class="card">
+      <h2>Lighting Efficiency</h2>
+      <p>Lights On: <strong>60%</strong></p>
+    </div>
+    <div class="card">
+      <h2>Energy Savings Today</h2>
+      <p><strong>18%</strong> saved</p>
+    </div>
+  </section>
+
+</body>
+<script src="./ai.js"></script>
+</html>
